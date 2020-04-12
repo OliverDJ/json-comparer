@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>If</Authors>
+    <Product>HealthHub</Product>
+    <PackageId>JsonComparer.HH</PackageId>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Models\Errors.fs" />
+    <Compile Include="Mappers\ErrorMappers.fs" />
+    <Compile Include="Comparor.fs" />
+    <Compile Include="Collector.fs" />
+    <Compile Include="Combiner.fs" />
+    <Compile Include="Library.fs" />
+    <None Include="run.fsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,81 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+**/Output/**
+# dependencies
+/node_modules
+packet-lock.json
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/az-resources/AzResourcesArtifact.zip
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/launchSettings.json
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+
+
+# FAKE - F# Make
+.fake/
+
+# Microsoft Fakes
+FakesAssemblies/
+*.nuget.targets
+
+
+
+#Custom
+
+preZip/
+artifacts/
+
+.ionide
+
+az-resources/configuration/env-params/environments/atest.json
+az-resources/configuration/env-params/environments/itest.json
+az-resources/configuration/env-params/environments/stest.json
+tests/KeyVaultTest/Receipt.tx
+
+/tests/KeyVaultTest/Receipt.txt
+/tests/ResourceTests/.paket/
+/tests/ResourceTests/.paket/paket.targets
+/tests/ResourceTests/.paket/paket.exe
+/tests/ResourceTests/.paket/Paket.Restore.targets
+/tests/ResourceTests/.vs/
+/tests/ResourceTests/.paket/load
+/tests/ResourceTests/tests/TemplateTest/obj/
+/tests/ResourceTests/tests/TemplateTest/bin
+
+**/obj/**
+**/bin/**
+**/.vs/**
+**/load/**
